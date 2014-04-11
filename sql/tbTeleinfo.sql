@@ -1,0 +1,41 @@
+-- 
+-- Structure de la table `tbTeleinfo`
+-- 
+
+CREATE TABLE `tbTeleinfo` (
+  `id` int(11) NOT NULL auto_increment,
+  `DATE` datetime default NULL,
+  `ADCO` varchar(12) collate latin1_german2_ci default NULL,
+  `OPTARIF` varchar(4) collate latin1_german2_ci default NULL,
+  `ISOUSC` varchar(2) collate latin1_german2_ci default NULL,
+  `BASE` varchar(9) collate latin1_german2_ci default NULL,
+  `HCHC` varchar(9) collate latin1_german2_ci default NULL,
+  `HCHP` varchar(49) collate latin1_german2_ci default NULL,
+  `EJPHN` varchar(9) collate latin1_german2_ci default NULL,
+  `EJPHPM` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHCJB` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHPJB` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHCJW` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHPJW` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHCJR` varchar(9) collate latin1_german2_ci default NULL,
+  `BBRHPJR` varchar(9) collate latin1_german2_ci default NULL,
+  `PEJP` varchar(2) collate latin1_german2_ci default NULL,
+  `PTEC` varchar(4) collate latin1_german2_ci default NULL,
+  `DEMAIN` varchar(4) collate latin1_german2_ci default NULL,
+  `IINST` varchar(3) collate latin1_german2_ci default NULL,
+  `ADPS` varchar(4) collate latin1_german2_ci default NULL,
+  `IMAX` varchar(4) collate latin1_german2_ci default NULL,
+  `IINST1` varchar(3) collate latin1_german2_ci default NULL,
+  `IINST2` varchar(3) collate latin1_german2_ci default NULL,
+  `IINST3` varchar(3) collate latin1_german2_ci default NULL,
+  `IMAX1` varchar(3) collate latin1_german2_ci default NULL,
+  `IMAX2` varchar(3) collate latin1_german2_ci default NULL,
+  `IMAX3` varchar(3) collate latin1_german2_ci default NULL,
+  `PMAX` varchar(5) collate latin1_german2_ci default NULL,
+  `PAPP` varchar(5) collate latin1_german2_ci default NULL,
+  `HHPHC` varchar(5) collate latin1_german2_ci default NULL,
+  `MOTDETAT` varchar(6) collate latin1_german2_ci default NULL,
+  `PPOT` varchar(2) collate latin1_german2_ci default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `SEARCH_INDEX` (`ADCO`,`DATE`)
+) ENGINE=MyISAM;
